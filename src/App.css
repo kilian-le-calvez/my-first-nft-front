@@ -2,78 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: auto;
-  width: 100%;
-  align-items: center;
-  text-align: center;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo-background {
-    width: 150px;
-    height: 150px;
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background: url("background.jpeg") no-repeat center;
-  background-color: black;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  cursor: help;
-}
-
-.App-header-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 500px;
-  width: 700px;
-  cursor: help;
-  border-radius: 10px;
-  transition: 1s;
-}
-/* 
-.App-header-center:hover {
-  background-color: #450067;
-  transition: 1s;
-} */
-
-@keyframes App-logo-spin {
-  0% {
-    opacity: 1;
-    transform: rotate(0deg);
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes App-logo-hide {
-  0% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 .App-bar {
   position: absolute;
   height: 50px;
@@ -106,7 +34,11 @@
   border: 1px solid white;
   border-radius: 10px;
   cursor: pointer;
+}
 
+.Button-connected-wallet:hover {
+  border: 1px solid rgba(255, 255, 255, 0);
+  cursor: help;
 }
 
 .Title-Nft {
@@ -127,7 +59,6 @@
 .App-body {
   min-height: 100vh;
   max-width: 100vw;
-  background-color: black;
   padding: 50px;
 }
 
@@ -150,4 +81,9 @@
 .Text-description-word:hover {
   opacity: 1;
   transition: 0.1s;
+}
+
+.App-mint {
+  min-height: 100vh;
+  color: white;
 }
