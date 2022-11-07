@@ -25,3 +25,16 @@
     background-color: rgba(255, 255, 255, 0.750);
     color: black;
 }
+
+.Link-Nft {
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.Container-nft {
+    margin-top: 50px;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
