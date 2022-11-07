@@ -79,7 +79,12 @@ function Mint() {
 
   return (
     <div id="App-mint" className="App-mint">
-        <div onClick={isMining ? null : mintNFT} className="Button-mint">{isMining ? "WAIT..." : "MINT"}</div> 
+        {
+            nftUrls.length >= 20 ?
+            <div className="Button-mint">You have 20 NFT already !</div> 
+            :
+            <div onClick={isMining ? null : mintNFT} className="Button-mint">{isMining ? "WAIT..." : `MINT ${nftUrls.length}/20`}</div> 
+        }
         <div className="Container-nft">
         {
             nftUrls.map((elem, index) => {
