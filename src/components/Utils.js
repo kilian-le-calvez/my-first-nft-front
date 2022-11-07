@@ -17,8 +17,7 @@ async function setupEventListener() {
 
       connectedContract.on("NewNFTMinted", (from, tokenId) => {
         console.log(from, tokenId.toNumber())
-        // eslint-disable-next-line no-restricted-globals
-        location.reload();
+        alert("Sorry I had some troubles with solidity, please refresh the page to see your new minted NFT in the list :)")
       });
       console.log("Setup event listener!")
     } else {
